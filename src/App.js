@@ -4,13 +4,8 @@ import Comment from './components/Comment';
 
 function App() {
 
-  let data = {
-    pic: "doge.png",
-    user: "xX_MasterOfTheDark_Xx",
-    background: "Meme page Owner",
-    comment: "Pues la verdad que no se que hago aquí pero ya qe estoy por aquí voy a hacer spam de mi página web de memes. Nunca se pueden tener suficientes memes."
-  }
-
+  let comments = require('./resources/data/comments.json');
+  let data = comments.comments[0]
   return (
     <div className="App">
       <h1>Estos son algunos comentarios de nuestros usuarios:</h1>
