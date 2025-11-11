@@ -6,7 +6,9 @@ function Comment (props){
   return(
     <div className="main-container">
         <div className="user-pic-wrapper">
-          <img className="user-pic" src={require('../resources/images/'+props.data.pic)} alt="Sample comment pic" />
+          <div className="pic-border">
+              <img className="user-pic" src={require('../resources/images/'+props.data.pic)} alt="Pic of ${props.data}" />
+          </div>
         </div>
         <div className="text-container">
           <p className="user">

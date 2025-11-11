@@ -10,7 +10,14 @@ function App() {
     <div className="App">
       <h1>Estos son algunos comentarios de nuestros usuarios:</h1>
       <div className='content-container'>
-        <Comment data={data} />
+
+        {
+          comments.comments.map((currComment,index) => (
+              <Comment data={currComment} />
+            )
+          )
+        }
+        
       </div>
     </div>
   );
