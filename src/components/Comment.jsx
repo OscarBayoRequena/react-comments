@@ -12,8 +12,7 @@ function Comment (props){
         </div>
         <div className="text-container">
           <p className="user">
-            {props.data.user}
-             - <span className="background">{props.data.background}</span>
+            {props.data.user} - <span className="background">{props.data.background}</span>
           </p>
           <p className="main-content">{props.data.comment}</p>
         </div>
